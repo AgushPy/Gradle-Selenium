@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Probar la busqueda en Google" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-05-12T23:20:24" hostname="DESKTOP-TFVC0QP" time="0.094">
+<testsuite name="Probar la busqueda en Google" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-12T23:35:55" hostname="DESKTOP-TFVC0QP" time="0.062">
   <properties/>
-  <testcase name="Busco algo en google" classname="Probar la busqueda en Google" time="0.094">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step ': navego en google' and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;: navego en google&quot;)&#10;public void navego_en_google() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;: busco algo&quot;)&#10;public void busco_algo() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;: toco boton de busqueda&quot;)&#10;public void toco_boton_de_busqueda() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;: obtengo resultado&quot;)&#10;public void obtengo_resultado() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step ': navego en google' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;: navego en google&quot;)
-public void navego_en_google() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;: busco algo&quot;)
-public void busco_algo() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;: toco boton de busqueda&quot;)
-public void toco_boton_de_busqueda() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;: obtengo resultado&quot;)
-public void obtengo_resultado() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</failure>
-  </testcase>
+  <testcase name="Busco algo en google" classname="Probar la busqueda en Google" time="0.062"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

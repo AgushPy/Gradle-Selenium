@@ -14,5 +14,10 @@ import io.cucumber.junit.CucumberOptions;
 )
 
 public class runner{
-    
+    // GooglePage google = new GooglePage();
+
+    // // @Given("^navego en google$")
+    // public void navigateToGoogle(){
+    //     google.navegarAGoogle();
+    // }
 }

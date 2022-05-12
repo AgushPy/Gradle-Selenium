@@ -12,7 +12,7 @@ public class BasePage {
 
     static{
         ChromeOptions chromeOptions = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver");
+        System.setProperty("webdriver.chrome.driver", "D:/ChromeDriver/chromedriver.exe");
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
     }
