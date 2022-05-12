@@ -16,18 +16,18 @@ public class GoogleSteps {
     
     @When("^busco algo$")
     public void entradaDeBusqueda(){
-        
+       
     }
 
     
     @And("^toco boton de busqueda$")
     public void tocarBoton(){
-        
+       
     }
 
     
     @Then("^obtengo resultado$")
     public void validarResultado(){
-        
+       
     }
 }

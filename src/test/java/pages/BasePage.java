@@ -11,8 +11,8 @@ public class BasePage {
     private static WebDriverWait wait;
 
     static{
-        System.setProperty("webdriver.chrome.driver", "C:/Users/agush/Downloads/chromedriver_win32(1)/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
+        System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver");
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
     }
