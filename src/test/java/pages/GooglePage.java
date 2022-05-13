@@ -7,6 +7,6 @@ public class GooglePage extends BasePage {
 
     public void navegarAGoogle(){
         System.out.println("Bandera");
-        navegarA("https://www.google.com");
+        navegarA("http://www.google.com");
     }
 }

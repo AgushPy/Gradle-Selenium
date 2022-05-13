@@ -9,10 +9,10 @@ public class BasePage {
     
     protected static WebDriver driver;
     private static WebDriverWait wait;
-
+    public static String pathGoogle = "C:\\Users\\agush\\Downloads\\chromedriver_win32(6)\\chromedriver.exe";
     static{
         ChromeOptions chromeOptions = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", "D:/ChromeDriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", pathGoogle);
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
     }

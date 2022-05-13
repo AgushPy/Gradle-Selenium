@@ -16,7 +16,7 @@ public class GoogleSteps {
     
     @When("^busco algo$")
     public void entradaDeBusqueda(){
-       
+       System.out.println("Bandera");
     }
 
     
