@@ -12,22 +12,22 @@ public class GoogleSteps {
     public void navigateToGoogle(){
         google.navegarAGoogle();
     }
-
+    
     
     @When("^busco algo$")
     public void entradaDeBusqueda(){
-       System.out.println("Bandera");
+        google.escribirEnElNavegador("JavaGod");
     }
-
+    
     
     @And("^toco boton de busqueda$")
     public void tocarBoton(){
-       
+        google.clickBuscarGoogle();
     }
 
     
     @Then("^obtengo resultado$")
     public void validarResultado(){
-       
+        google.entrarPagina();
     }
 }
