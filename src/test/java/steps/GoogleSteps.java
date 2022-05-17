@@ -10,6 +10,8 @@ public class GoogleSteps {
 
     @Given("^navego en google$")
     public void navigateToGoogle(){
+        //La espera prohibida no hay que usarla se debe tirar una excepcion de interrumped
+        // Thread.sleep(1000);
         google.navegarAGoogle();
     }
     

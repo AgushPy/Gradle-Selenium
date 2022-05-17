@@ -93,4 +93,17 @@ public class BasePage {
         Find(celdaQueBusco).sendKeys(ponerTexto);
 
      }
+
+     public void cambiarDeIframe(int iframeIndex){
+         driver.switchTo().frame(iframeIndex);
+     }
+
+     public void switchToParentFrame(){
+         driver.switchTo().parentFrame();
+     }
+
+     //Pop
+     public void rechazarAlerta(){
+         driver.switchTo().alert().dismiss();
+     }
 }
