@@ -21,5 +21,17 @@ dependencies{
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.3.4'
     // https://mvnrepository.com/artifact/junit/junit
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0-alpha7'
 
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter
+    implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'
+
+
+
+}
+
+test { 
+    systemProperty 'some.prop', 'value'
 }

@@ -1,8 +1,11 @@
 package pages;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,6 +40,10 @@ public class BasePage {
 
     public static void navegarA(String url){
         driver.get(url);
+    }
+
+    public static void cerrarNavegador(){
+        driver.quit();
     }
 
     private WebElement Find(String locator){
@@ -104,6 +111,33 @@ public class BasePage {
 
      //Pop
      public void rechazarAlerta(){
-         driver.switchTo().alert().dismiss();
+        try{ 
+        driver.switchTo().alert().dismiss();
+        }catch(NoAlertPresentException e){
+            //Imprime el error
+            e.printStackTrace();
+        }
+    }
+    
+    //  Puede darse que yo quiera la validacion en los steps de la pagina o en la modelacion, es mas correcto tenerlo en los pasos al final
+     public String textoObtenidoDelElemento(String locator){
+         return Find(locator).getText();
+     }
+
+     public boolean elementoEstaHabilitado(String locator){
+         return Find(locator).isEnabled();
+     }
+
+     public boolean elementoEstaVisualizado(String locator){
+         return Find(locator).isDisplayed();
+     }
+
+     public boolean elementoEstaSeleccionado(String locator){
+        return Find(locator).isSelected();
+     }
+
+    //  Por lo general debo enviar la lista de esto y recibirlo para pasarlo por un fore a String
+     public List<WebElement> recorrerTodosLosElementos(String locator){
+         return driver.findElements(By.className(locator));
      }
 }

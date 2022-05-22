@@ -16,9 +16,9 @@ public class GoogleSteps {
     }
     
     
-    @When("^busco algo$")
-    public void entradaDeBusqueda(){
-        google.escribirEnElNavegador("JavaGod");
+    @When("^busco (.+) algo$")
+    public void entradaDeBusqueda(String valorBuscar){
+        google.escribirEnElNavegador(valorBuscar);
     }
     
     
@@ -31,5 +31,7 @@ public class GoogleSteps {
     @Then("^obtengo resultado$")
     public void validarResultado(){
         google.entrarPagina();
+        // Assert.assertEquals("",google.primerResultado());
+        
     }
 }
